@@ -1,0 +1,25 @@
+#conteneur {
+    border: solid red 1px;
+    border-radius: 2px;
+    height: 300px;
+    width: 600px;
+    overflow: scroll;
+}
+
+#liste-messages {
+    padding-left: 1em;
+    list-style-type: none;
+}
+
+#liste-messages > li {
+    margin-top: 0.5em;
+}
+
+#texte-message {
+    margin-top: 1em;
+    width: 500px;
+}
+
+#envoyer-message {
+    width: 100px;
+}

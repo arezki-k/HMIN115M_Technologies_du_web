@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Messagerie instantanée</title>
+        <link rel="stylesheet" type="text/css" href="messagerie.css">
+        
+    </head>
+    <body>
+        <h1>Messagerie instantanée</h1>
+        <div id="conteneur">
+            <ul id="liste-messages">
+                    <script type="text/javascript" src="./javascript.js"></script>
+            </ul>
+        </div>
+        <form id="form-nouveau-message" method="POST" action="./ws_ecriture.php">
+            <input id="texte-message" placeholder="Salut ! Comment ça va ?" name="message">
+            <input type="submit" id="envoyer-message">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+Pour ouvrir le terminal : ctrl + alt + t
+
+Pour lancer le serveur PHP intégré :
+php -S localhost:8000
+
+Pour consulter vos fichiers, lancer le serveur depuis le dossier où sont situés vos fichiers PHP puis,
+"clic droit -> ouvrir le lien" sur l'url de la ligne :
+Listening on http://localhost:8000
+
+Pour ouvrir un fichier particulier, modifier l'url appelée dans le navigateur :
+http://localhost:8000/mon-fichier.php
+http://localhost:8000/nom-dossier/nom-fichier.php

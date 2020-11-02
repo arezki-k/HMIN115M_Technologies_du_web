@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>formulaire de recette</title>
+    <meta charset="utf-8"/>
+    <link rel=stylesheet href="style.css" type=text/css>
+</head>
+<body>
+    <h1>Formulaire recette</h1>
+    <form action="fichier.php" method="get">
+    titre de la recette: <input type="text" required name="titre de la recette"><br>
+    type de la recette:
+  
+        <p> Cochez votre choix: <br />
+            <input type="radio" name="type" id="entree"><label for="entree">entree</label><br />
+            <input type="radio" name="type" id="plat"><label for="plat">plat</label><br/> 
+            <input type="radio" name="type" id="dessert"><label for="dessert">dessert</label><br></p>
+    
+        <label for="type-cuisine">selectionner type de cuisine:</label>
+
+        <select id="type de cuisine">
+            <option value="">--choisir un type SVP--</option>
+            <option value="cuisine africaine">cuisine africaine</option>
+            <option value="cuisine européenne">cuisine européenne</option>
+            <option value="cuisine asiatique">cuisine asiatique</option>
+            <option value="cuisine américaine">cuisine américaine</option>
+        </select><br>
+       
+    </p>
+    <p>Information sur les allergenes:</p> 
+    <p>Cocher les allergenes svp:
+        <input type="checkbox" name="allergene"id="lactose"><label for="lactose">lactose</label>
+        <input type="checkbox" name="allergene"id="glutene"><label for="glutene">glutene</label>
+        <input type="checkbox" name="allergene"id="oleagineux"><label for="oleagineux">oleagineux</label>
+        <input type="checkbox" name="allergene"id="fr"><label for="fr">fruits rouges</label>
+    </p>
+    <p>Preciser la difficulte de la recette SVP:
+    <input type="range" list="tickmarks" value="3" max="3" min="1" step="1">
+    <datalist id="tickmarks">
+            <option value="1" label="1"></option>
+            <option value="2" label="2"></option>
+            <option value="3" label="3"></option>
+          </datalist></p>
+    <p>Temps de praparation:   </p>
+    <p>veuillez defiler le cursur sur la bonne valeur:
+        <input type="number" value="36" max="180" min="5" step="5"> minutes
+    </p>
+    <p>Instructions de preparation:</p>
+    <textarea rows="30" cols="150">mettre les instructions </textarea>
+    <p>ajouter image: (saisir URL) <input type="text" placeholder="https://www.google.fr/imghp?hl=fr&tab=wi0&ogbl"></p>
+    <p>Date d'ajout: <input type="date"></p>
+   <p>Adresse élctronique: <input required type="email"></p> 
+ 
+
+   <br> <input type="submit" value="cliquez ici">
+    </form>
+    
+</body>
+</html>
